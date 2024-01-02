@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		70C68A312B440DB500104194 /* MessengerCloneSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A302B440DB500104194 /* MessengerCloneSwiftUIApp.swift */; };
-		70C68A332B440DB500104194 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A322B440DB500104194 /* ContentView.swift */; };
+		70C68A332B440DB500104194 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A322B440DB500104194 /* LogInView.swift */; };
 		70C68A352B440DB600104194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C68A342B440DB600104194 /* Assets.xcassets */; };
 		70C68A382B440DB700104194 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C68A372B440DB700104194 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		70C68A2D2B440DB500104194 /* MessengerCloneSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerCloneSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C68A302B440DB500104194 /* MessengerCloneSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerCloneSwiftUIApp.swift; sourceTree = "<group>"; };
-		70C68A322B440DB500104194 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		70C68A322B440DB500104194 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		70C68A342B440DB600104194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70C68A372B440DB700104194 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,9 +51,9 @@
 		70C68A2F2B440DB500104194 /* MessengerCloneSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				70C68A302B440DB500104194 /* MessengerCloneSwiftUIApp.swift */,
-				70C68A322B440DB500104194 /* ContentView.swift */,
-				70C68A342B440DB600104194 /* Assets.xcassets */,
+				70C68A3E2B440E4800104194 /* Root */,
+				70C68A402B440E9000104194 /* Authentification */,
+				70C68A3F2B440E8100104194 /* Supporting files */,
 				70C68A362B440DB700104194 /* Preview Content */,
 			);
 			path = MessengerCloneSwiftUI;
@@ -65,6 +65,30 @@
 				70C68A372B440DB700104194 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		70C68A3E2B440E4800104194 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				70C68A302B440DB500104194 /* MessengerCloneSwiftUIApp.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		70C68A3F2B440E8100104194 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				70C68A342B440DB600104194 /* Assets.xcassets */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		70C68A402B440E9000104194 /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				70C68A322B440DB500104194 /* LogInView.swift */,
+			);
+			path = Authentification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +161,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70C68A332B440DB500104194 /* ContentView.swift in Sources */,
+				70C68A332B440DB500104194 /* LogInView.swift in Sources */,
 				70C68A312B440DB500104194 /* MessengerCloneSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
