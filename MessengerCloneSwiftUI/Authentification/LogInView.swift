@@ -8,14 +8,90 @@
 import SwiftUI
 
 struct LogInView: View {
+    @State private var email = ""
+    @State private var password = ""
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                Spacer()
+                Image("Logo")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                    .padding()
+                
+                VStack {
+                    TextField("Enter your email", text: $email)
+                        .font(.subheadline)
+                        .padding(12)
+                        .background(Color(.systemGray6))
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .padding(.horizontal, 24)
+                    TextField("Enter your password", text: $password)
+                        .font(.subheadline)
+                        .padding(12)
+                        .background(Color(.systemGray6))
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                        .padding(.horizontal, 24)
+                }
+                
+                Button("Forgot your Password?") {
+                    
+                }
+                .frame(maxWidth: .infinity, alignment: .trailing)
+                .font(.footnote)
+                .fontWeight(.semibold)
+                .padding(.top)
+                .padding(.trailing, 28)
+                
+                Button("Log in") {
+                    
+                }
+                .font(.subheadline)
+                .fontWeight(.semibold)
+                .foregroundStyle(.white)
+                .frame(width: 360, height: 44)
+                .background(Color(.systemBlue))
+                .clipShape(RoundedRectangle(cornerRadius: 10))
+                .padding(.vertical)
+                
+                HStack {
+                    Rectangle()
+                        .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
+                    Text("OR")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                    Rectangle()
+                        .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
+                }
+                .foregroundStyle(.gray)
+                
+                HStack {
+                    Image("Facebook-Logo")
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                    Text("Continue with Facebook")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(.blue)
+                }
+                .padding(.top, 8)
+                
+                Spacer()
+                Divider()
+                
+                NavigationLink {
+                    Text("Signup view")
+                } label: {
+                    HStack(spacing: 3) {
+                        Text("Don't have an account?")
+                        Text("Sign Up")
+                            .fontWeight(.semibold)
+                    }
+                    .font(.footnote)
+                }
+                .padding(.vertical)
+            }
         }
-        .padding()
     }
 }
 
