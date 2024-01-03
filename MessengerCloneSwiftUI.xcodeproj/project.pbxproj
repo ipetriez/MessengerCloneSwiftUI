@@ -11,6 +11,8 @@
 		70C68A332B440DB500104194 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A322B440DB500104194 /* LogInView.swift */; };
 		70C68A352B440DB600104194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C68A342B440DB600104194 /* Assets.xcassets */; };
 		70C68A382B440DB700104194 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C68A372B440DB700104194 /* Preview Assets.xcassets */; };
+		70C68A422B442CDB00104194 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A412B442CDB00104194 /* RegistrationView.swift */; };
+		70C68A452B442E6E00104194 /* AuthFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A442B442E6E00104194 /* AuthFieldModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		70C68A322B440DB500104194 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		70C68A342B440DB600104194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70C68A372B440DB700104194 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		70C68A412B442CDB00104194 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		70C68A442B442E6E00104194 /* AuthFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFieldModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		70C68A2F2B440DB500104194 /* MessengerCloneSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				70C68A432B442E4700104194 /* Components */,
 				70C68A3E2B440E4800104194 /* Root */,
 				70C68A402B440E9000104194 /* Authentification */,
 				70C68A3F2B440E8100104194 /* Supporting files */,
@@ -87,8 +92,33 @@
 			isa = PBXGroup;
 			children = (
 				70C68A322B440DB500104194 /* LogInView.swift */,
+				70C68A412B442CDB00104194 /* RegistrationView.swift */,
 			);
 			path = Authentification;
+			sourceTree = "<group>";
+		};
+		70C68A432B442E4700104194 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				70C68A472B442F3000104194 /* Views */,
+				70C68A462B442F2500104194 /* Modifiers */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		70C68A462B442F2500104194 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				70C68A442B442E6E00104194 /* AuthFieldModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		70C68A472B442F3000104194 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +191,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70C68A422B442CDB00104194 /* RegistrationView.swift in Sources */,
 				70C68A332B440DB500104194 /* LogInView.swift in Sources */,
 				70C68A312B440DB500104194 /* MessengerCloneSwiftUIApp.swift in Sources */,
+				70C68A452B442E6E00104194 /* AuthFieldModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
