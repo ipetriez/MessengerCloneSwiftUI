@@ -14,6 +14,10 @@
 		70C68A422B442CDB00104194 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A412B442CDB00104194 /* RegistrationView.swift */; };
 		70C68A452B442E6E00104194 /* AuthFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A442B442E6E00104194 /* AuthFieldModifier.swift */; };
 		70C68A492B46B93800104194 /* AuthActionButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A482B46B93800104194 /* AuthActionButtonModifier.swift */; };
+		70C68A4C2B46BA6900104194 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A4B2B46BA6900104194 /* InboxView.swift */; };
+		70C68A4E2B46BC5000104194 /* ChatsToolbarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A4D2B46BC5000104194 /* ChatsToolbarModifier.swift */; };
+		70C68A502B46BD3400104194 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A4F2B46BD3400104194 /* ActiveNowView.swift */; };
+		70C68A522B46BF8B00104194 /* ChatsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A512B46BF8B00104194 /* ChatsItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +29,10 @@
 		70C68A412B442CDB00104194 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		70C68A442B442E6E00104194 /* AuthFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFieldModifier.swift; sourceTree = "<group>"; };
 		70C68A482B46B93800104194 /* AuthActionButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthActionButtonModifier.swift; sourceTree = "<group>"; };
+		70C68A4B2B46BA6900104194 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		70C68A4D2B46BC5000104194 /* ChatsToolbarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsToolbarModifier.swift; sourceTree = "<group>"; };
+		70C68A4F2B46BD3400104194 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
+		70C68A512B46BF8B00104194 /* ChatsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,7 @@
 				70C68A432B442E4700104194 /* Components */,
 				70C68A3E2B440E4800104194 /* Root */,
 				70C68A402B440E9000104194 /* Authentification */,
+				70C68A4A2B46BA5600104194 /* Inbox */,
 				70C68A3F2B440E8100104194 /* Supporting files */,
 				70C68A362B440DB700104194 /* Preview Content */,
 			);
@@ -112,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				70C68A442B442E6E00104194 /* AuthFieldModifier.swift */,
+				70C68A4D2B46BC5000104194 /* ChatsToolbarModifier.swift */,
 				70C68A482B46B93800104194 /* AuthActionButtonModifier.swift */,
 			);
 			path = Modifiers;
@@ -120,8 +130,18 @@
 		70C68A472B442F3000104194 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				70C68A4F2B46BD3400104194 /* ActiveNowView.swift */,
+				70C68A512B46BF8B00104194 /* ChatsItemView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		70C68A4A2B46BA5600104194 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				70C68A4B2B46BA6900104194 /* InboxView.swift */,
+			);
+			path = Inbox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,7 +215,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				70C68A422B442CDB00104194 /* RegistrationView.swift in Sources */,
+				70C68A502B46BD3400104194 /* ActiveNowView.swift in Sources */,
+				70C68A4C2B46BA6900104194 /* InboxView.swift in Sources */,
+				70C68A4E2B46BC5000104194 /* ChatsToolbarModifier.swift in Sources */,
 				70C68A332B440DB500104194 /* LogInView.swift in Sources */,
+				70C68A522B46BF8B00104194 /* ChatsItemView.swift in Sources */,
 				70C68A312B440DB500104194 /* MessengerCloneSwiftUIApp.swift in Sources */,
 				70C68A492B46B93800104194 /* AuthActionButtonModifier.swift in Sources */,
 				70C68A452B442E6E00104194 /* AuthFieldModifier.swift in Sources */,
