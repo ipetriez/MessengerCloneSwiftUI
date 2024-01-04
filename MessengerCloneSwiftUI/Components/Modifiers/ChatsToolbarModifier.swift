@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ChatsToolbarModifier: ViewModifier {
+    var action: () -> Void
     func body(content: Content) -> some View {
         content
             .toolbar {
@@ -21,7 +22,7 @@ struct ChatsToolbarModifier: ViewModifier {
                 }
                 
                 ToolbarItem(placement: .topBarTrailing) {
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Button(action: { action() }, label: {
                         Image(systemName: "square.and.pencil.circle.fill")
                             .resizable()
                             .frame(width: 32, height: 32)

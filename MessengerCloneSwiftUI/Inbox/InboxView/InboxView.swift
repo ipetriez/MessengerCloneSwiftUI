@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct InboxView: View {
+    @State private var showNewMessageView = false
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -20,7 +22,12 @@ struct InboxView: View {
                 .listStyle(.plain)
                 .frame(height: UIScreen.main.bounds.height - 120)
             }
-            .modifier(ChatsToolbarModifier())
+            .fullScreenCover(isPresented: $showNewMessageView, content: {
+                NewMessageView()
+            })
+            .modifier(ChatsToolbarModifier(action: {
+                showNewMessageView.toggle()
+            }))
         }
     }
 }

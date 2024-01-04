@@ -18,6 +18,7 @@
 		70C68A4E2B46BC5000104194 /* ChatsToolbarModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A4D2B46BC5000104194 /* ChatsToolbarModifier.swift */; };
 		70C68A502B46BD3400104194 /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A4F2B46BD3400104194 /* ActiveNowView.swift */; };
 		70C68A522B46BF8B00104194 /* ChatsItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A512B46BF8B00104194 /* ChatsItemView.swift */; };
+		70C68A572B46DB0E00104194 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A562B46DB0E00104194 /* NewMessageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		70C68A4D2B46BC5000104194 /* ChatsToolbarModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsToolbarModifier.swift; sourceTree = "<group>"; };
 		70C68A4F2B46BD3400104194 /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		70C68A512B46BF8B00104194 /* ChatsItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsItemView.swift; sourceTree = "<group>"; };
+		70C68A562B46DB0E00104194 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,9 +141,26 @@
 		70C68A4A2B46BA5600104194 /* Inbox */ = {
 			isa = PBXGroup;
 			children = (
-				70C68A4B2B46BA6900104194 /* InboxView.swift */,
+				70C68A552B46DAFF00104194 /* NewMessageView */,
+				70C68A542B46DAF600104194 /* InboxView */,
 			);
 			path = Inbox;
+			sourceTree = "<group>";
+		};
+		70C68A542B46DAF600104194 /* InboxView */ = {
+			isa = PBXGroup;
+			children = (
+				70C68A4B2B46BA6900104194 /* InboxView.swift */,
+			);
+			path = InboxView;
+			sourceTree = "<group>";
+		};
+		70C68A552B46DAFF00104194 /* NewMessageView */ = {
+			isa = PBXGroup;
+			children = (
+				70C68A562B46DB0E00104194 /* NewMessageView.swift */,
+			);
+			path = NewMessageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +242,7 @@
 				70C68A312B440DB500104194 /* MessengerCloneSwiftUIApp.swift in Sources */,
 				70C68A492B46B93800104194 /* AuthActionButtonModifier.swift in Sources */,
 				70C68A452B442E6E00104194 /* AuthFieldModifier.swift in Sources */,
+				70C68A572B46DB0E00104194 /* NewMessageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
