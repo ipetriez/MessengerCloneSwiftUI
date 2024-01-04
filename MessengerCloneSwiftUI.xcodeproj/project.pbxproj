@@ -13,6 +13,7 @@
 		70C68A382B440DB700104194 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C68A372B440DB700104194 /* Preview Assets.xcassets */; };
 		70C68A422B442CDB00104194 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A412B442CDB00104194 /* RegistrationView.swift */; };
 		70C68A452B442E6E00104194 /* AuthFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A442B442E6E00104194 /* AuthFieldModifier.swift */; };
+		70C68A492B46B93800104194 /* AuthActionButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A482B46B93800104194 /* AuthActionButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		70C68A372B440DB700104194 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		70C68A412B442CDB00104194 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		70C68A442B442E6E00104194 /* AuthFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthFieldModifier.swift; sourceTree = "<group>"; };
+		70C68A482B46B93800104194 /* AuthActionButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthActionButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				70C68A442B442E6E00104194 /* AuthFieldModifier.swift */,
+				70C68A482B46B93800104194 /* AuthActionButtonModifier.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				70C68A422B442CDB00104194 /* RegistrationView.swift in Sources */,
 				70C68A332B440DB500104194 /* LogInView.swift in Sources */,
 				70C68A312B440DB500104194 /* MessengerCloneSwiftUIApp.swift in Sources */,
+				70C68A492B46B93800104194 /* AuthActionButtonModifier.swift in Sources */,
 				70C68A452B442E6E00104194 /* AuthFieldModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
