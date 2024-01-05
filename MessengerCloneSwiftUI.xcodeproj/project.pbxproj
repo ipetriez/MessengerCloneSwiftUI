@@ -23,6 +23,7 @@
 		70C68A5C2B46E29700104194 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A5B2B46E29700104194 /* SettingsOptionsViewModel.swift */; };
 		70C68A5E2B481C4A00104194 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A5D2B481C4A00104194 /* ProfileViewModel.swift */; };
 		70C68A602B4827FF00104194 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A5F2B4827FF00104194 /* User.swift */; };
+		70C68A642B48395600104194 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A632B48395600104194 /* CircularProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		70C68A5B2B46E29700104194 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 		70C68A5D2B481C4A00104194 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		70C68A5F2B4827FF00104194 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		70C68A632B48395600104194 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				70C68A4F2B46BD3400104194 /* ActiveNowView.swift */,
 				70C68A512B46BF8B00104194 /* ChatsItemView.swift */,
+				70C68A632B48395600104194 /* CircularProfileImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				70C68A502B46BD3400104194 /* ActiveNowView.swift in Sources */,
 				70C68A5C2B46E29700104194 /* SettingsOptionsViewModel.swift in Sources */,
 				70C68A4C2B46BA6900104194 /* InboxView.swift in Sources */,
+				70C68A642B48395600104194 /* CircularProfileImageView.swift in Sources */,
 				70C68A4E2B46BC5000104194 /* ChatsToolbarModifier.swift in Sources */,
 				70C68A332B440DB500104194 /* LogInView.swift in Sources */,
 				70C68A602B4827FF00104194 /* User.swift in Sources */,

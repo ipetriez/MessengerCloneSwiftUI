@@ -16,11 +16,7 @@ struct ChatsToolbarModifier: ViewModifier {
                 ToolbarItem(placement: .topBarLeading) {
                     HStack {
                         NavigationLink(value: user) {
-                            Image(user.profileImageURL ?? "")
-                                .resizable()
-                                .frame(width: 32, height: 32)
-                                .scaledToFill()
-                                .clipShape(.circle)
+                            CircularProfileImageView(user: user, size: .xSmall)
                         }
                         Text("Chats")
                             .font(.title)
