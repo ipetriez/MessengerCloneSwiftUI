@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct ChatsToolbarModifier: ViewModifier {
+    @Binding var user: User
     var action: () -> Void
     func body(content: Content) -> some View {
         content
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     HStack {
-                        Image(systemName: "person.circle.fill")
+                        NavigationLink(value: user) {
+                            Image(user.profileImageURL ?? "")
+                                .resizable()
+                                .frame(width: 32, height: 32)
+                                .scaledToFill()
+                                .clipShape(.circle)
+                        }
                         Text("Chats")
                             .font(.title)
                             .fontWeight(.semibold)

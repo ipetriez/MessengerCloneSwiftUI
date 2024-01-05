@@ -22,6 +22,7 @@
 		70C68A5A2B46E03200104194 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A592B46E03200104194 /* ProfileView.swift */; };
 		70C68A5C2B46E29700104194 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A5B2B46E29700104194 /* SettingsOptionsViewModel.swift */; };
 		70C68A5E2B481C4A00104194 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A5D2B481C4A00104194 /* ProfileViewModel.swift */; };
+		70C68A602B4827FF00104194 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A5F2B4827FF00104194 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		70C68A592B46E03200104194 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		70C68A5B2B46E29700104194 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 		70C68A5D2B481C4A00104194 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		70C68A5F2B4827FF00104194 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			children = (
 				70C68A592B46E03200104194 /* ProfileView.swift */,
 				70C68A5D2B481C4A00104194 /* ProfileViewModel.swift */,
+				70C68A5F2B4827FF00104194 /* User.swift */,
 				70C68A5B2B46E29700104194 /* SettingsOptionsViewModel.swift */,
 			);
 			path = Profile;
@@ -256,6 +259,7 @@
 				70C68A4C2B46BA6900104194 /* InboxView.swift in Sources */,
 				70C68A4E2B46BC5000104194 /* ChatsToolbarModifier.swift in Sources */,
 				70C68A332B440DB500104194 /* LogInView.swift in Sources */,
+				70C68A602B4827FF00104194 /* User.swift in Sources */,
 				70C68A522B46BF8B00104194 /* ChatsItemView.swift in Sources */,
 				70C68A312B440DB500104194 /* MessengerCloneSwiftUIApp.swift in Sources */,
 				70C68A492B46B93800104194 /* AuthActionButtonModifier.swift in Sources */,

@@ -9,7 +9,11 @@ import SwiftUI
 import PhotosUI
 
 struct ProfileView: View {
+    private let user: User
     @StateObject var profileVM = ProfileViewModel()
+    
+    init(user: User) { self.user = user }
+    
     var body: some View {
         VStack {
             PhotosPicker(selection: $profileVM.selectedPhotoItem) {
@@ -20,14 +24,22 @@ struct ProfileView: View {
                         .frame(width: 80, height: 80)
                         .clipShape(Circle())
                 } else {
-                    Image(systemName: "person.circle.fill")
-                        .resizable()
-                        .frame(width: 80, height: 80)
-                        .foregroundStyle(Color(.systemGray4))
+                    if let url = user.profileImageURL {
+                        Image(url)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 80, height: 80)
+                            .clipShape(Circle())
+                    } else {
+                        Image(systemName: "person.circle.fill")
+                            .resizable()
+                            .frame(width: 80, height: 80)
+                            .foregroundStyle(Color(.systemGray4))
+                    }
                 }
             }
             
-            Text("Billy Willie")
+            Text(user.fullName)
                 .font(.title2)
                 .fontWeight(.semibold)
         }
@@ -61,5 +73,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView()
+    ProfileView(user: User.mockUser)
 }
