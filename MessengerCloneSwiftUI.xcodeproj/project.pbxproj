@@ -21,6 +21,7 @@
 		70C68A572B46DB0E00104194 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A562B46DB0E00104194 /* NewMessageView.swift */; };
 		70C68A5A2B46E03200104194 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A592B46E03200104194 /* ProfileView.swift */; };
 		70C68A5C2B46E29700104194 /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A5B2B46E29700104194 /* SettingsOptionsViewModel.swift */; };
+		70C68A5E2B481C4A00104194 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A5D2B481C4A00104194 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		70C68A562B46DB0E00104194 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		70C68A592B46E03200104194 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		70C68A5B2B46E29700104194 /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
+		70C68A5D2B481C4A00104194 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				70C68A592B46E03200104194 /* ProfileView.swift */,
+				70C68A5D2B481C4A00104194 /* ProfileViewModel.swift */,
 				70C68A5B2B46E29700104194 /* SettingsOptionsViewModel.swift */,
 			);
 			path = Profile;
@@ -257,6 +260,7 @@
 				70C68A312B440DB500104194 /* MessengerCloneSwiftUIApp.swift in Sources */,
 				70C68A492B46B93800104194 /* AuthActionButtonModifier.swift in Sources */,
 				70C68A452B442E6E00104194 /* AuthFieldModifier.swift in Sources */,
+				70C68A5E2B481C4A00104194 /* ProfileViewModel.swift in Sources */,
 				70C68A5A2B46E03200104194 /* ProfileView.swift in Sources */,
 				70C68A572B46DB0E00104194 /* NewMessageView.swift in Sources */,
 			);
