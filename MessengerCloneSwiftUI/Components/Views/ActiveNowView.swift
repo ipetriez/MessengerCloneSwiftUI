@@ -14,7 +14,7 @@ struct ActiveNowView: View {
                 ForEach(0 ..< 10, id: \.self) { user in
                     VStack {
                         ZStack(alignment: .bottomTrailing) {
-                            CircularProfileImageView(user: User.mockUser, size: .medium)
+                            CircularProfileImageView(user: User.mockData, size: .medium)
                             
                             ZStack {
                                 Circle()

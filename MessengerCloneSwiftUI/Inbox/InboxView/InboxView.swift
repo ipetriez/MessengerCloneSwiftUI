@@ -9,7 +9,7 @@ import SwiftUI
 
 struct InboxView: View {
     @State private var showNewMessageView = false
-    @State private var user = User.mockUser
+    @State private var user = User.mockData
     
     var body: some View {
         NavigationStack {
