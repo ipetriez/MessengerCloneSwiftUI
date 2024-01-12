@@ -36,6 +36,7 @@
 		706D48062B4D8D930036BC80 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 706D48052B4D8D930036BC80 /* FirebaseRemoteConfigSwift */; };
 		706D48082B4D8D930036BC80 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 706D48072B4D8D930036BC80 /* FirebaseStorage */; };
 		706D480A2B4D8D930036BC80 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 706D48092B4D8D930036BC80 /* FirebaseStorageCombine-Community */; };
+		7085ABBB2B518C150069CE78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7085ABBA2B518C150069CE78 /* GoogleService-Info.plist */; };
 		70C68A312B440DB500104194 /* MessengerCloneSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A302B440DB500104194 /* MessengerCloneSwiftUIApp.swift */; };
 		70C68A332B440DB500104194 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A322B440DB500104194 /* LogInView.swift */; };
 		70C68A352B440DB600104194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C68A342B440DB600104194 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 /* Begin PBXFileReference section */
 		706D47CE2B4D7FE30036BC80 /* ChatMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageView.swift; sourceTree = "<group>"; };
 		706D47D02B4D85430036BC80 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
+		7085ABBA2B518C150069CE78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		70C68A2D2B440DB500104194 /* MessengerCloneSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerCloneSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C68A302B440DB500104194 /* MessengerCloneSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerCloneSwiftUIApp.swift; sourceTree = "<group>"; };
 		70C68A322B440DB500104194 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				70C68A582B46E01C00104194 /* Profile */,
 				70C68A3F2B440E8100104194 /* Supporting files */,
 				70C68A362B440DB700104194 /* Preview Content */,
+				7085ABBA2B518C150069CE78 /* GoogleService-Info.plist */,
 			);
 			path = MessengerCloneSwiftUI;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 			files = (
 				70C68A382B440DB700104194 /* Preview Assets.xcassets in Resources */,
 				70C68A352B440DB600104194 /* Assets.xcassets in Resources */,
+				7085ABBB2B518C150069CE78 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
