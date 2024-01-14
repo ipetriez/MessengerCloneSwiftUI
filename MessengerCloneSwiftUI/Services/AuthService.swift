@@ -10,6 +10,12 @@ import Firebase
 
 final class AuthService {
     
+    @Published var userSession: FirebaseAuth.User?
+    
+    init(userSession: FirebaseAuth.User? = nil) {
+        self.userSession = userSession ?? Auth.auth().currentUser
+    }
+    
     func createUser(withEmail email: String, password: String, fullName: String) async throws {
         do {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)

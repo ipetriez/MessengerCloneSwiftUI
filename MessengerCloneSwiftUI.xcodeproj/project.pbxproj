@@ -40,6 +40,8 @@
 		7085ABBD2B52E1070069CE78 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085ABBC2B52E1070069CE78 /* LoginViewModel.swift */; };
 		7085ABC02B52E13D0069CE78 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085ABBF2B52E13D0069CE78 /* RegistrationViewModel.swift */; };
 		7085ABC42B52E1770069CE78 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085ABC32B52E1770069CE78 /* AuthService.swift */; };
+		7085ABC62B53DCAB0069CE78 /* RootContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085ABC52B53DCAB0069CE78 /* RootContentView.swift */; };
+		7085ABC82B53DCD10069CE78 /* RootContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085ABC72B53DCD10069CE78 /* RootContentViewModel.swift */; };
 		70C68A312B440DB500104194 /* MessengerCloneSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A302B440DB500104194 /* MessengerCloneSwiftUIApp.swift */; };
 		70C68A332B440DB500104194 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A322B440DB500104194 /* LogInView.swift */; };
 		70C68A352B440DB600104194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C68A342B440DB600104194 /* Assets.xcassets */; };
@@ -67,6 +69,8 @@
 		7085ABBC2B52E1070069CE78 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		7085ABBF2B52E13D0069CE78 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		7085ABC32B52E1770069CE78 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		7085ABC52B53DCAB0069CE78 /* RootContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContentView.swift; sourceTree = "<group>"; };
+		7085ABC72B53DCD10069CE78 /* RootContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContentViewModel.swift; sourceTree = "<group>"; };
 		70C68A2D2B440DB500104194 /* MessengerCloneSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerCloneSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C68A302B440DB500104194 /* MessengerCloneSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerCloneSwiftUIApp.swift; sourceTree = "<group>"; };
 		70C68A322B440DB500104194 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
@@ -152,6 +156,15 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		7085ABC92B53DE570069CE78 /* RootContentView */ = {
+			isa = PBXGroup;
+			children = (
+				7085ABC52B53DCAB0069CE78 /* RootContentView.swift */,
+				7085ABC72B53DCD10069CE78 /* RootContentViewModel.swift */,
+			);
+			path = RootContentView;
+			sourceTree = "<group>";
+		};
 		70C68A242B440DB500104194 = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				70C68A302B440DB500104194 /* MessengerCloneSwiftUIApp.swift */,
+				7085ABC92B53DE570069CE78 /* RootContentView */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -406,7 +420,9 @@
 				70C68A642B48395600104194 /* CircularProfileImageView.swift in Sources */,
 				70C68A4E2B46BC5000104194 /* ChatsToolbarModifier.swift in Sources */,
 				706D47D12B4D85430036BC80 /* ChatBubble.swift in Sources */,
+				7085ABC62B53DCAB0069CE78 /* RootContentView.swift in Sources */,
 				70C68A332B440DB500104194 /* LogInView.swift in Sources */,
+				7085ABC82B53DCD10069CE78 /* RootContentViewModel.swift in Sources */,
 				70C68A602B4827FF00104194 /* User.swift in Sources */,
 				70C68A522B46BF8B00104194 /* ChatsItemView.swift in Sources */,
 				70C68A312B440DB500104194 /* MessengerCloneSwiftUIApp.swift in Sources */,
