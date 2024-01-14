@@ -43,6 +43,7 @@
 		7085ABC62B53DCAB0069CE78 /* RootContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085ABC52B53DCAB0069CE78 /* RootContentView.swift */; };
 		7085ABC82B53DCD10069CE78 /* RootContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085ABC72B53DCD10069CE78 /* RootContentViewModel.swift */; };
 		7085ABCD2B53F2C60069CE78 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085ABCC2B53F2C60069CE78 /* UserService.swift */; };
+		7085ABCF2B53F72C0069CE78 /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085ABCE2B53F72C0069CE78 /* InboxViewModel.swift */; };
 		70C68A312B440DB500104194 /* MessengerCloneSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A302B440DB500104194 /* MessengerCloneSwiftUIApp.swift */; };
 		70C68A332B440DB500104194 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C68A322B440DB500104194 /* LogInView.swift */; };
 		70C68A352B440DB600104194 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70C68A342B440DB600104194 /* Assets.xcassets */; };
@@ -73,6 +74,7 @@
 		7085ABC52B53DCAB0069CE78 /* RootContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContentView.swift; sourceTree = "<group>"; };
 		7085ABC72B53DCD10069CE78 /* RootContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootContentViewModel.swift; sourceTree = "<group>"; };
 		7085ABCC2B53F2C60069CE78 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		7085ABCE2B53F72C0069CE78 /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
 		70C68A2D2B440DB500104194 /* MessengerCloneSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerCloneSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70C68A302B440DB500104194 /* MessengerCloneSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerCloneSwiftUIApp.swift; sourceTree = "<group>"; };
 		70C68A322B440DB500104194 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 			isa = PBXGroup;
 			children = (
 				70C68A4B2B46BA6900104194 /* InboxView.swift */,
+				7085ABCE2B53F72C0069CE78 /* InboxViewModel.swift */,
 			);
 			path = InboxView;
 			sourceTree = "<group>";
@@ -451,6 +454,7 @@
 				70C68A5A2B46E03200104194 /* ProfileView.swift in Sources */,
 				7085ABCD2B53F2C60069CE78 /* UserService.swift in Sources */,
 				70C68A572B46DB0E00104194 /* NewMessageView.swift in Sources */,
+				7085ABCF2B53F72C0069CE78 /* InboxViewModel.swift in Sources */,
 				7085ABBD2B52E1070069CE78 /* LoginViewModel.swift in Sources */,
 				706D47CF2B4D7FE30036BC80 /* ChatMessageView.swift in Sources */,
 			);

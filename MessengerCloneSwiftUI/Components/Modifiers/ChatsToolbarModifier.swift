@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct ChatsToolbarModifier: ViewModifier {
-    @Binding var user: User
+    @Binding var user: User?
     var action: () -> Void
     func body(content: Content) -> some View {
         content
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     HStack {
-                        NavigationLink(value: user) {
-                            CircularProfileImageView(user: user, size: .xSmall)
+                        NavigationLink(destination: ProfileView(user: $user)) {
+                            CircularProfileImageView(user: $user, size: .xSmall)
                         }
                         Text("Chats")
                             .font(.title)

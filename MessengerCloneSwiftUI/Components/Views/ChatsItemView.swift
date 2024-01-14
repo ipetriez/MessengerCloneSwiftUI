@@ -10,7 +10,7 @@ import SwiftUI
 struct ChatsItemView: View {
     var body: some View {
         HStack {
-            CircularProfileImageView(user: User.mockData, size: .medium)
+            CircularProfileImageView(user: .constant(.mockData), size: .medium)
             
             VStack(alignment: .leading, spacing: 4) {
                 Text("Billy Willy")

@@ -19,7 +19,7 @@ struct ChatMessageView: View {
             switch messageType {
             case .incoming:
                 HStack(alignment: .bottom, spacing: 8) {
-                    CircularProfileImageView(user: User.mockData, size: .xxSmall)
+                    CircularProfileImageView(user: .constant(.mockData), size: .xxSmall)
                     Text("This is a test message")
                         .font(.subheadline)
                         .padding(12)

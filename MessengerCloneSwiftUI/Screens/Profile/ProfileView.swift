@@ -9,10 +9,8 @@ import SwiftUI
 import PhotosUI
 
 struct ProfileView: View {
-    private let user: User
+    @Binding var user: User?
     @StateObject var profileVM = ProfileViewModel()
-    
-    init(user: User) { self.user = user }
     
     var body: some View {
         VStack {
@@ -24,19 +22,19 @@ struct ProfileView: View {
                         .frame(width: 80, height: 80)
                         .clipShape(Circle())
                 } else {
-                    if let url = user.profileImageURL {
+                    if let url = user?.profileImageURL {
                         Image(url)
                             .resizable()
                             .scaledToFill()
                             .frame(width: 80, height: 80)
                             .clipShape(Circle())
                     } else {
-                        CircularProfileImageView(user: user, size: .xLarge)
+                        CircularProfileImageView(user: .constant(user), size: .xLarge)
                     }
                 }
             }
             
-            Text(user.fullName)
+            Text(user?.fullName ?? "")
                 .font(.title2)
                 .fontWeight(.semibold)
         }
@@ -70,5 +68,5 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView(user: User.mockData)
+    ProfileView(user: .constant(.mockData))
 }
