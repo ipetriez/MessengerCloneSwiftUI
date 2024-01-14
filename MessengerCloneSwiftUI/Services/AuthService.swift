@@ -23,6 +23,7 @@ final class AuthService {
     
     init(userSession: FirebaseAuth.User? = nil) {
         self.userSession = userSession ?? Auth.auth().currentUser
+        Task { try await UserService.shared.getCurrentUser() }
     }
     
     // MARK: — Public methods
