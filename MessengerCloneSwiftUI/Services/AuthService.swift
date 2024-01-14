@@ -11,6 +11,7 @@ import Firebase
 final class AuthService {
     
     @Published var userSession: FirebaseAuth.User?
+    static let shared = AuthService()
     
     init(userSession: FirebaseAuth.User? = nil) {
         self.userSession = userSession ?? Auth.auth().currentUser
@@ -19,13 +20,19 @@ final class AuthService {
     func createUser(withEmail email: String, password: String, fullName: String) async throws {
         do {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
+            self.userSession = result.user
         } catch let error {
             print("DEGUG: Failed to create user with the following error: \(error)")
         }
     }
     
     func login(with email: String, password: String) async throws {
-        
+        do {
+            let result = try await Auth.auth().signIn(withEmail: email, password: password)
+            self.userSession = result.user
+        } catch {
+            print("DEBUG: Failed to sign in with error: \(error)")
+        }
     }
     
     func signOut() {
