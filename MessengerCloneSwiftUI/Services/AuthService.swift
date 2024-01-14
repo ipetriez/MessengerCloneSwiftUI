@@ -19,7 +19,6 @@ final class AuthService {
     func createUser(withEmail email: String, password: String, fullName: String) async throws {
         do {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
-            print("DEBUG: Created user \(result.user.uid)")
         } catch let error {
             print("DEGUG: Failed to create user with the following error: \(error)")
         }
@@ -27,5 +26,14 @@ final class AuthService {
     
     func login(with email: String, password: String) async throws {
         
+    }
+    
+    func signOut() {
+        do {
+            try Auth.auth().signOut()
+            self.userSession = nil
+        } catch {
+            print("DEBUG: Failed to sign out with error: \(error)")
+        }
     }
 }

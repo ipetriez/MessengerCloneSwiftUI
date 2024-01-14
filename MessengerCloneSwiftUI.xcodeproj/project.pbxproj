@@ -165,6 +165,25 @@
 			path = RootContentView;
 			sourceTree = "<group>";
 		};
+		7085ABCA2B53E2850069CE78 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				70C68A3E2B440E4800104194 /* Root */,
+				70C68A402B440E9000104194 /* Authentification */,
+				70C68A4A2B46BA5600104194 /* Inbox */,
+				70C68A582B46E01C00104194 /* Profile */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		7085ABCB2B53E2AC0069CE78 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				70C68A302B440DB500104194 /* MessengerCloneSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		70C68A242B440DB500104194 = {
 			isa = PBXGroup;
 			children = (
@@ -184,12 +203,10 @@
 		70C68A2F2B440DB500104194 /* MessengerCloneSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				7085ABCB2B53E2AC0069CE78 /* App */,
 				7085ABC22B52E16A0069CE78 /* Services */,
 				70C68A432B442E4700104194 /* Components */,
-				70C68A3E2B440E4800104194 /* Root */,
-				70C68A402B440E9000104194 /* Authentification */,
-				70C68A4A2B46BA5600104194 /* Inbox */,
-				70C68A582B46E01C00104194 /* Profile */,
+				7085ABCA2B53E2850069CE78 /* Screens */,
 				70C68A3F2B440E8100104194 /* Supporting files */,
 				70C68A362B440DB700104194 /* Preview Content */,
 				7085ABBA2B518C150069CE78 /* GoogleService-Info.plist */,
@@ -208,7 +225,6 @@
 		70C68A3E2B440E4800104194 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				70C68A302B440DB500104194 /* MessengerCloneSwiftUIApp.swift */,
 				7085ABC92B53DE570069CE78 /* RootContentView */,
 			);
 			path = Root;
