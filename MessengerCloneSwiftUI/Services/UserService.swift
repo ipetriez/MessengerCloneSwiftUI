@@ -30,4 +30,9 @@ final class UserService {
         let user = try userDocSnapshot.data(as: User.self)
         self.currentUser = user
     }
+    
+    static func getAllUsers() async throws -> [User] {
+        let querySnapshot = try await Firestore.firestore().collection("users").getDocuments()
+        return querySnapshot.documents.compactMap { try? $0.data(as: User.self) }
+    }
 }
