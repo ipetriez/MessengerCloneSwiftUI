@@ -19,6 +19,8 @@ final class UserService {
     
     static let shared = UserService()
     
+    private init() { }
+    
     // MARK: — Public methods
     
     func getCurrentUser() async throws {

@@ -21,9 +21,9 @@ final class AuthService {
     
     // MARK: — Lifecycle
     
-    init(userSession: FirebaseAuth.User? = nil) {
+    private init() {
         self.userSession = userSession ?? Auth.auth().currentUser
-        Task { try await UserService.shared.getCurrentUser() }
+        loadCurrentUserData()
     }
     
     // MARK: — Public methods
@@ -33,6 +33,7 @@ final class AuthService {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
             self.userSession = result.user
             try await self.uploadUserData(email: email, fullName: fullName, id: result.user.uid)
+            loadCurrentUserData()
         } catch let error {
             print("DEGUG: Failed to create user with the following error: \(error)")
         }
@@ -42,6 +43,7 @@ final class AuthService {
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.userSession = result.user
+            loadCurrentUserData()
         } catch {
             print("DEBUG: Failed to sign in with error: \(error)")
         }
@@ -51,6 +53,7 @@ final class AuthService {
         do {
             try Auth.auth().signOut()
             self.userSession = nil
+            UserService.shared.currentUser = nil
         } catch {
             print("DEBUG: Failed to sign out with error: \(error)")
         }
@@ -62,5 +65,9 @@ final class AuthService {
         let user = User(fullName: fullName, email: email, profileImageURL: nil)
         guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
         try await Firestore.firestore().collection("users").document(id).setData(encodedUser)
+    }
+    
+    private func loadCurrentUserData() {
+        Task { try await UserService.shared.getCurrentUser() }
     }
 }
