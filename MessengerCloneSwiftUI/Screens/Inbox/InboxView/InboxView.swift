@@ -41,6 +41,7 @@ struct InboxView: View {
             })
             .modifier(ChatsToolbarModifier(user: $inboxVM.currentUser, action: {
                 showNewMessageView.toggle()
+                self.selectedUser = nil
             }))
         }
     }
