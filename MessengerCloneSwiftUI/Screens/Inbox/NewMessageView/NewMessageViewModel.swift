@@ -22,6 +22,6 @@ final class NewMessageViewModel: ObservableObject {
     }
     
     func getAllUsers() async throws {
-        users = try await UserService.getAllUsers().filter { $0.id != Auth.auth().currentUser?.uid }
+        users = try await UserService.shared.getAllUsers().filter { $0.id != Auth.auth().currentUser?.uid }
     }
 }

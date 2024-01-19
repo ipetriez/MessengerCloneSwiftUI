@@ -6,18 +6,21 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ChatsItemView: View {
+    @State var message: TextMessage
+    
     var body: some View {
         HStack {
-            CircularProfileImageView(user: .constant(.mockData), size: .medium)
+            CircularProfileImageView(user: .constant(message.user), size: .medium)
             
             VStack(alignment: .leading, spacing: 4) {
-                Text("Billy Willy")
+                Text(message.user?.fullName ?? "")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                 
-                Text("Okay! No problem!")
+                Text(message.messageText)
                     .font(.subheadline)
                     .foregroundStyle(.gray)
                     .lineLimit(2)
@@ -25,7 +28,7 @@ struct ChatsItemView: View {
             }
             
             HStack {
-                Text("Yesterday")
+                Text("\(message.timestamp.dateValue())")
                 Image(systemName: "chevron.right")
             }
             .font(.footnote)
@@ -36,5 +39,5 @@ struct ChatsItemView: View {
 }
 
 #Preview {
-    ChatsItemView()
+    ChatsItemView(message: TextMessage(fromID: "", toID: "", messageText: "This is a sample message text.", timestamp: Timestamp()))
 }

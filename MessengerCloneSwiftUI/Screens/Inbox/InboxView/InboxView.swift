@@ -11,15 +11,15 @@ struct InboxView: View {
     @State private var showNewMessageView = false
     @State private var selectedUser: User?
     @State private var showChat = false
-    @State private var inboxVM = InboxViewModel()
+    @StateObject private var inboxVM = InboxViewModel()
     
     var body: some View {
         NavigationStack {
             ScrollView {
                 ActiveNowView()
                 List {
-                    ForEach(0 ... 10, id: \.self) { chat in
-                        ChatsItemView()
+                    ForEach(inboxVM.recentMessages) { message in
+                        ChatsItemView(message: message)
                     }
                 }
                 .listStyle(.plain)

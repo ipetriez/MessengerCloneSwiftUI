@@ -41,11 +41,23 @@ struct ChatService: ChatServiceProtocol {
             .document(correspondent.id)
             .collection(currentUserID)
         
+        let recentChatsFromCurrentUserRef = messagesCollection
+            .document(currentUserID)
+            .collection("recent-messages")
+            .document(correspondent.id)
+        
+        let recentChatsFromCorrespondentUserRef = messagesCollection
+            .document(correspondent.id)
+            .collection("recent-messages")
+            .document(currentUserID)
+        
         let messageID = currentUserDocRef.documentID
         let message = TextMessage(fromID: currentUserID, toID: correspondent.id, messageText: messageText, timestamp: Timestamp())
         guard let messageData = try? Firestore.Encoder().encode(message) else { return }
         currentUserDocRef.setData(messageData)
         chatPartnerCollectionRef.document(messageID).setData(messageData)
+        recentChatsFromCurrentUserRef.setData(messageData)
+        recentChatsFromCorrespondentUserRef.setData(messageData)
     }
     
     func observeMessages(completion: @escaping ([TextMessage]) -> Void) {

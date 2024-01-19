@@ -11,6 +11,10 @@ import FirebaseFirestoreSwift
 
 final class UserService {
     
+    // MARK: — Private properties
+    
+    private let usersCollection = Firestore.firestore().collection("users")
+    
     // MARK: — Public properties
     
     @Published var currentUser: User?
@@ -25,14 +29,20 @@ final class UserService {
     
     func getCurrentUser() async throws {
         guard let uid = Auth.auth().currentUser?.uid else { return }
-        let users = Firestore.firestore().collection("users")
-        let userDocSnapshot = try await users.document(uid).getDocument()
+        let userDocSnapshot = try await usersCollection.document(uid).getDocument()
         let user = try userDocSnapshot.data(as: User.self)
         self.currentUser = user
     }
     
-    static func getAllUsers() async throws -> [User] {
-        let querySnapshot = try await Firestore.firestore().collection("users").getDocuments()
+    func getAllUsers() async throws -> [User] {
+        let querySnapshot = try await usersCollection.getDocuments()
         return querySnapshot.documents.compactMap { try? $0.data(as: User.self) }
+    }
+    
+    func getUser(with uid: String, completion: @escaping (User) -> Void) {
+        usersCollection.document(uid).getDocument { snapshot, error in
+            guard let user = try? snapshot?.data(as: User.self) else { return }
+            completion(user)
+        }
     }
 }
