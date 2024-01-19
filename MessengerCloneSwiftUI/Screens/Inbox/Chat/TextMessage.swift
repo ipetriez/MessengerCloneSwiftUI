@@ -15,6 +15,7 @@ struct TextMessage: Identifiable, Codable {
     var toID: String
     var messageText: String
     var timestamp: Timestamp
+    var user: User?
     
     var id: String {
         messageID ?? NSUUID().uuidString

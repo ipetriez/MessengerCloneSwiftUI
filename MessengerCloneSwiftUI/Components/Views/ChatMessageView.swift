@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ChatMessageView: View {
     enum MessageType {
@@ -13,14 +14,15 @@ struct ChatMessageView: View {
     }
     
     let messageType: MessageType
+    let message: TextMessage
     
     var body: some View {
         HStack {
             switch messageType {
             case .incoming:
                 HStack(alignment: .bottom, spacing: 8) {
-                    CircularProfileImageView(user: .constant(.mockData), size: .xxSmall)
-                    Text("This is a test message")
+                    CircularProfileImageView(user: .constant(message.user), size: .xxSmall)
+                    Text(message.messageText)
                         .font(.subheadline)
                         .padding(12)
                         .background(Color(.systemGray5))
@@ -31,7 +33,7 @@ struct ChatMessageView: View {
                 }
             case .outcoming:
                 Spacer()
-                Text("This is a test message")
+                Text(message.messageText)
                     .font(.subheadline)
                     .padding(12)
                     .background(Color(.systemBlue))
@@ -45,5 +47,5 @@ struct ChatMessageView: View {
 }
 
 #Preview {
-    ChatMessageView(messageType: .incoming)
+    ChatMessageView(messageType: .incoming, message: TextMessage(fromID: "", toID: "", messageText: "This is a sample message text.", timestamp: Timestamp()))
 }
