@@ -8,11 +8,29 @@
 import Foundation
 import Firebase
 
-struct MessageService {
+// MARK: — ChatServiceProtocol
+
+protocol ChatServiceProtocol {
+    func sendMessage(_ messageText: String)
+    func observeMessages(completion: @escaping ([TextMessage]) -> Void)
+}
+
+struct ChatService: ChatServiceProtocol {
     
-    static let messagesCollection = Firestore.firestore().collection("messages")
+    // MARK: — Private properties
     
-    static func sendMessage(_ messageText: String, to correspondent: User) {
+    private let correspondent: User
+    private let messagesCollection = Firestore.firestore().collection("messages")
+    
+    // MARK: — Lifecycle
+    
+    init(correspondent: User) {
+        self.correspondent = correspondent
+    }
+    
+    // MARK: — Public methods
+    
+    func sendMessage(_ messageText: String) {
         guard let currentUserID = Auth.auth().currentUser?.uid else { return }
         let currentUserDocRef = messagesCollection
             .document(currentUserID)
@@ -30,7 +48,7 @@ struct MessageService {
         chatPartnerCollectionRef.document(messageID).setData(messageData)
     }
     
-    static func observeMessages(with correspondent: User, completion: @escaping ([TextMessage]) -> Void) {
+    func observeMessages(completion: @escaping ([TextMessage]) -> Void) {
         guard let currentUserID = Auth.auth().currentUser?.uid else { return }
         let query = messagesCollection
             .document(currentUserID)
