@@ -33,10 +33,11 @@ struct ChatView: View {
                     }
                 }
                 
-                ForEach(chatVM.messages) { message in
-                    ChatMessageView(messageType: message.isFromCurrentUser ? .incoming : .outcoming, message: message)
+                LazyVStack {
+                    ForEach(chatVM.messages) { message in
+                        ChatMessageView(messageType: message.isFromCurrentUser ? .incoming : .outcoming, message: message)
+                    }
                 }
-                
             }
             
             Spacer()
