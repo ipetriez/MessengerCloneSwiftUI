@@ -32,6 +32,7 @@ final class InboxViewModel: ObservableObject {
     private func setupBindings() {
         UserService.shared.$currentUser
             .compactMap { $0 }
+            .receive(on: DispatchQueue.main)
             .sink { [weak self] user in
             self?.currentUser = user
         }.store(in: &subscriptions)

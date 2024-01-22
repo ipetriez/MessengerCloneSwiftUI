@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		704AE13A2B5E74C400693CFA /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE1392B5E74C400693CFA /* Date.swift */; };
+		704AE13D2B5E776F00693CFA /* ActiveNowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE13C2B5E776F00693CFA /* ActiveNowViewModel.swift */; };
 		706D47CF2B4D7FE30036BC80 /* ChatMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706D47CE2B4D7FE30036BC80 /* ChatMessageView.swift */; };
 		706D47D12B4D85430036BC80 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706D47D02B4D85430036BC80 /* ChatBubble.swift */; };
 		706D47D62B4D8D930036BC80 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 706D47D52B4D8D930036BC80 /* FirebaseAnalytics */; };
@@ -72,6 +73,7 @@
 
 /* Begin PBXFileReference section */
 		704AE1392B5E74C400693CFA /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		704AE13C2B5E776F00693CFA /* ActiveNowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowViewModel.swift; sourceTree = "<group>"; };
 		706D47CE2B4D7FE30036BC80 /* ChatMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageView.swift; sourceTree = "<group>"; };
 		706D47D02B4D85430036BC80 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		7085ABBA2B518C150069CE78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -152,6 +154,15 @@
 				704AE1392B5E74C400693CFA /* Date.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		704AE13B2B5E775900693CFA /* ActiveNowView */ = {
+			isa = PBXGroup;
+			children = (
+				70C68A4F2B46BD3400104194 /* ActiveNowView.swift */,
+				704AE13C2B5E776F00693CFA /* ActiveNowViewModel.swift */,
+			);
+			path = ActiveNowView;
 			sourceTree = "<group>";
 		};
 		7085ABBE2B52E1220069CE78 /* LogInView */ = {
@@ -297,7 +308,7 @@
 		70C68A472B442F3000104194 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				70C68A4F2B46BD3400104194 /* ActiveNowView.swift */,
+				704AE13B2B5E775900693CFA /* ActiveNowView */,
 				70C68A512B46BF8B00104194 /* ChatsItemView.swift */,
 				70C68A632B48395600104194 /* CircularProfileImageView.swift */,
 				706D47CE2B4D7FE30036BC80 /* ChatMessageView.swift */,
@@ -473,6 +484,7 @@
 				706D47D12B4D85430036BC80 /* ChatBubble.swift in Sources */,
 				7085ABC62B53DCAB0069CE78 /* RootContentView.swift in Sources */,
 				70C68A332B440DB500104194 /* LogInView.swift in Sources */,
+				704AE13D2B5E776F00693CFA /* ActiveNowViewModel.swift in Sources */,
 				7085ABC82B53DCD10069CE78 /* RootContentViewModel.swift in Sources */,
 				70C68A602B4827FF00104194 /* User.swift in Sources */,
 				70C68A522B46BF8B00104194 /* ChatsItemView.swift in Sources */,

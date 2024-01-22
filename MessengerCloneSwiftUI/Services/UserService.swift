@@ -34,7 +34,8 @@ final class UserService {
         self.currentUser = user
     }
     
-    func getAllUsers() async throws -> [User] {
+    func getAllUsers(limit: Int? = nil) async throws -> [User] {
+        if let limit { usersCollection.limit(to: limit) }
         let querySnapshot = try await usersCollection.getDocuments()
         return querySnapshot.documents.compactMap { try? $0.data(as: User.self) }
     }
