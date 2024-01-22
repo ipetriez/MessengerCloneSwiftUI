@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		704AE13A2B5E74C400693CFA /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704AE1392B5E74C400693CFA /* Date.swift */; };
 		706D47CF2B4D7FE30036BC80 /* ChatMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706D47CE2B4D7FE30036BC80 /* ChatMessageView.swift */; };
 		706D47D12B4D85430036BC80 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706D47D02B4D85430036BC80 /* ChatBubble.swift */; };
 		706D47D62B4D8D930036BC80 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 706D47D52B4D8D930036BC80 /* FirebaseAnalytics */; };
@@ -70,6 +71,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		704AE1392B5E74C400693CFA /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		706D47CE2B4D7FE30036BC80 /* ChatMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageView.swift; sourceTree = "<group>"; };
 		706D47D02B4D85430036BC80 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		7085ABBA2B518C150069CE78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -144,6 +146,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		704AE1382B5E74AC00693CFA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				704AE1392B5E74C400693CFA /* Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		7085ABBE2B52E1220069CE78 /* LogInView */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +235,7 @@
 				70C68A432B442E4700104194 /* Components */,
 				7085ABCA2B53E2850069CE78 /* Screens */,
 				70C68A3F2B440E8100104194 /* Supporting files */,
+				704AE1382B5E74AC00693CFA /* Extensions */,
 				70C68A362B440DB700104194 /* Preview Content */,
 				7085ABBA2B518C150069CE78 /* GoogleService-Info.plist */,
 			);
@@ -474,6 +485,7 @@
 				70C68A5A2B46E03200104194 /* ProfileView.swift in Sources */,
 				7085ABCD2B53F2C60069CE78 /* UserService.swift in Sources */,
 				70C68A572B46DB0E00104194 /* NewMessageView.swift in Sources */,
+				704AE13A2B5E74C400693CFA /* Date.swift in Sources */,
 				7085ABCF2B53F72C0069CE78 /* InboxViewModel.swift in Sources */,
 				7085ABBD2B52E1070069CE78 /* LoginViewModel.swift in Sources */,
 				706D47CF2B4D7FE30036BC80 /* ChatMessageView.swift in Sources */,

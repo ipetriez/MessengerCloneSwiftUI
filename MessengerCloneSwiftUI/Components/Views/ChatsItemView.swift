@@ -28,7 +28,7 @@ struct ChatsItemView: View {
             }
             
             HStack {
-                Text("\(message.timestamp.dateValue())")
+                Text("\(message.timestamp.dateValue().timestampString())")
                 Image(systemName: "chevron.right")
             }
             .font(.footnote)
